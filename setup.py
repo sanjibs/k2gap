@@ -11,7 +11,7 @@ with open('README.md') as f:
     
 setup(
     name='k2gap',
-    version=1.0.0,
+    version='1.0.0',
     description='A module for the K2GAP target selection function',
     long_description=long_description,
     long_description_content_type='text/markdown',
