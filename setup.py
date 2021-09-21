@@ -27,7 +27,7 @@ setup(
         'License :: OSI Approved :: BSD License',
         'Programming Language :: Python :: 3.7',
     ],
-    install_requires=['numpy','json'],
+    install_requires=['numpy'],
     packages=['k2gap'],
     package_data={'k2gap':['k2circles.json'],'': ['AUTHORS.rst','README.md','LICENSE']},
 )
