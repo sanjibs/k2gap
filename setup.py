@@ -5,13 +5,14 @@ except ImportError:
     from distutils.core import setup
     setup
 
-
+exec(open('k2gap/version.py').read())
+    
 with open('README.md') as f:
     long_description = f.read()
     
 setup(
     name='k2gap',
-    version='1.0.0',
+    version=__version__,
     description='A module for the K2GAP target selection function',
     long_description=long_description,
     long_description_content_type='text/markdown',
@@ -28,5 +29,5 @@ setup(
     ],
     install_requires=['numpy','json'],
     packages=['k2gap'],
-    package_data={'': ['k2circles.json','AUTHORS.rst','README.md','LICENSE']},
+    package_data={'k2gap':['k2circles.json'],'': ['AUTHORS.rst','README.md','LICENSE']},
 )

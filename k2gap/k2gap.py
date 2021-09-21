@@ -16,7 +16,6 @@ insurvey=k2gap.sf(cno,ra,dec,jmag,hmag,kmag,simulate_onsilicon=True)
 import numpy as np
 import json
 
-__version__='0.9.0'
 
 def read_json(filename):
     d=None
@@ -83,7 +82,7 @@ def circ_id(cno,ra,dec,radius=1.0):
     cno=np.zeros(ra.size,dtype=np.int64)+cno
     circ_id=np.zeros(ra.size,dtype=np.float64)-1
     circ_sep=np.zeros(ra.size,dtype=np.float64)+radius
-    datafile=os.path.join(os.path.dirname(__file__),'data/k2circles.json')    
+    datafile=os.path.join(os.path.dirname(__file__),'k2circles.json')    
     fields=read_json(datafile)
     for cno1 in np.unique(cno):
         indd=np.where(cno==cno1)[0]
