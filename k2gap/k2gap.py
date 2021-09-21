@@ -15,7 +15,7 @@ insurvey=k2gap.sf(cno,ra,dec,jmag,hmag,kmag,simulate_onsilicon=True)
 
 import numpy as np
 import json
-
+import os
 
 def read_json(filename):
     d=None
