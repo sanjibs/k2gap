@@ -245,7 +245,7 @@ def sf(cno,ra,dec,jmag,hmag,kmag,radius=1.75,simulate_onsilicon=False):
             result=(col_jk >= 0.5)&(vmag>=9)&(vmag<14.8)&(ccdb>=0)&(ccdb!=1)
         else:
             result=np.zeros(vmag.size,dtype=np.bool)
-        result1[indd]=result&(ccdb>=0)
+        result1[indd]=result&(ccdb>=0)&(jmag<15)
     return result1
 
 
