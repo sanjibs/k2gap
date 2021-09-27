@@ -64,5 +64,5 @@ OR
 #### *Returns*
 
 * y : (boolean) array_like
-    - 0/False if   
+    - True if slection function is satisfied otherwise False  
 
