@@ -151,7 +151,7 @@ def sf(cno,ra,dec,jmag,hmag,kmag,radius=1.75,simulate_onsilicon=False):
     Returns
     -------
     y : (boolean) array_like
-        0/False if   
+        True if selection function is satisfied otherwise False   
 
     """
     
