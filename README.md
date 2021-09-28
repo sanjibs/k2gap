@@ -1,6 +1,6 @@
 # k2gap
 A python module which contains some functions related to k2gap data. Most important being the selection function of targets selected by the K2GAP program (k2gap.sf). For a set of observables x, k2gap.sf returns the function y(x) which is True if it satisfies the selection criteria and False otherwise.
-Visit the [K2 GAP website] (http://www.physics.usyd.edu.au/k2gap/) for observed and simulated data sets and further  details about the survey.
+Visit the [K2 GAP website](http://www.physics.usyd.edu.au/k2gap/) for observed and simulated data sets and further  details about the survey.
 
 
 ### Installation
